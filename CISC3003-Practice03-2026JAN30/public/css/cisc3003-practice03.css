@@ -1,0 +1,199 @@
+html, body, header, footer, hgroup, nav, main, article, section, figure, figcaption,
+h1, h2, h3, ul, li, div, p, img, time {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+/* -------------------------
+   1) Base typography & page
+   ------------------------- */
+body {
+  background: #E8EAF6; /* page light gray/purple */
+  color: #111;
+  line-height: 1.5;
+  font-family: Georgia, "Times New Roman", Times, serif; /* serif for body text */
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+    font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+/* Links (requirements) */
+a {
+  color: #00B0FF;          /* link text color */
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  background-color: #F50057; /* hover background color */
+  color: #fff;
+  outline: none;
+}
+
+/* -------------------------
+   2) Header & navigation
+   ------------------------- */
+header, footer {
+  color: white;
+  background-color: #1A237E;
+  margin: 0em 4em 0.25em 4em; /* given hint */
+}
+
+
+header h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0.15em;
+}
+
+header p {
+  font-style: italic;
+  margin: 5px 0 15px 0;
+}
+* Navigation styles */
+nav {
+    background-color: #3F51B5;
+    margin: 0 -30px;
+    padding: 10px 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: underline;
+}
+
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* -------------------------
+   3) Main layout
+   ------------------------- */
+main {
+  margin: 0em 4em 0.25em 4em;
+  background: #fff;
+  padding: 1.25em;
+}
+
+/* -------------------------
+   4) Sections / cards
+   ------------------------- */
+section {
+  border: 0.08em solid #C5CAE9;
+  margin-bottom: 1.5em;
+  background: #fff;
+}
+
+section h3 {
+  background: #7986CB;   /* section title bar */
+  color: #fff;
+  padding: 0.6em 0.9em;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* -------------------------
+   5) Figure / caption
+   ------------------------- */
+figure { margin: 0; }
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  background: #C5CAE9;   /* caption background */
+  padding: 0.6em 0.9em;
+  font-style: italic;
+}
+
+/* Text blocks under headings */
+section > div {
+  padding: 0.9em;
+}
+
+/* -------------------------
+   6) Related photos strip
+   ------------------------- */
+/* Your HTML has the 2nd section as “Related Photos”, so style it by order */
+section:nth-of-type(2) > div {
+  display: flex;
+  gap: 0.9em;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section:nth-of-type(2) img {
+  display: block;
+  width: 6.25rem;
+  height: 6.25rem;
+  object-fit: cover;
+  background: #fff;
+  border: 0.08em solid #C5CAE9;
+  padding: 0.25em;
+}
+
+/* -------------------------
+   7) Reviews
+   ------------------------- */
+#reviews > div {
+  padding: 0.9em;
+  border-top: 0.08em dotted #C5CAE9;
+}
+
+#reviews > div:first-of-type {
+  border-top: 0;
+}
+
+.byline {
+  font-style: italic;
+  color: #00B0FF;
+  margin-bottom: 0.25em;
+}
+
+.byline time {
+  color: #FF80AB; /* date highlight */
+}
+
+/* -------------------------
+   8) Footer
+   ------------------------- */
+footer {
+  padding: 1em 1.5em;
+}
+
+footer p {
+  margin: 0.25em 0;
+  font-size: 0.95rem;
+}
+
+footer em { opacity: 0.95; }
