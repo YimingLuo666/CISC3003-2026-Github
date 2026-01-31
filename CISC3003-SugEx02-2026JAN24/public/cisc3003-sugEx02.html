@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Charles (Yiming) Luo · Personal Page</title>
+  <link rel="stylesheet" href="./cisc3003-sugEx02.css" />
+</head>
+
+<body>
+  <!-- Top nav (same vibe: brand + anchor links) -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">●</span>
+        <span class="brand-name">Charles Luo</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (big title + subtitle, like Central Coffee) -->
+  <main id="top" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Charles (Yiming) Luo</h1>
+      <p class="hero-subtitle">Student in University of Macau, Research Assistent who works on Efficient & Privacy-Preserving LLM Research</p>
+    </div>
+  </main>
+
+  <!-- Section: About -->
+  <section id="about" class="section">
+    <div class="container section-grid">
+      <div class="section-text">
+        <h2>About</h2>
+        <p>
+          I’m Charles (Yiming) Luo, a final-year Computer Science undergraduate at the University of Macau.
+          My work focuses on building efficient, privacy-preserving, and reasoning-enhanced language models—
+          especially practical training and deployment strategies that make advanced models more usable on
+          real-world constraints.
+        </p>
+        <p>
+          I’ve participated in academic exchanges including a Winter 2025 semester at the University of Michigan–Ann Arbor
+          and a Summer 2025 exchange at Shanghai Jiao Tong University. These experiences shaped how I approach research:
+          I care about solid theory, measurable gains, and clean engineering that scales.
+        </p>
+      </div>
+
+      <!-- Image placeholder -->
+      <figure class="section-media">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Section: Focus (mirrors "Menu" section style in demo: a short intro + two columns lists) -->
+  <section id="focus" class="section section-alt">
+    <div class="container">
+      <h2>Focus</h2>
+      <p class="section-lead">
+        I’m interested in systems + learning methods that reduce training cost, improve reasoning, and protect user data.
+        Recent themes I care about:
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Research Themes</h3>
+          <ul>
+            <li>Parameter-efficient fine-tuning (LoRA) and adapter composition/merging</li>
+            <li>Complexity-aware training recipes (SFT vs RL allocation)</li>
+            <li>Model compression: pruning, evaluation-driven selection, and efficient routing</li>
+            <li>Privacy-preserving workflows for local / edge deployment</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>What I Build</h3>
+          <ul>
+            <li>Reproducible experiments & benchmark suites for reasoning tasks</li>
+            <li>Visualization dashboards (e.g., summary heatmaps for adapter metrics)</li>
+            <li>Clean, documented pipelines: data → training → evaluation → reporting</li>
+            <li>Practical engineering for research prototypes</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Optional: small “menu-style” list block -->
+      <div class="mini-list">
+        <div class="mini-col">
+          <h4>Highlights</h4>
+          <p>Efficient training · Trustworthy evaluation · Privacy-first deployment</p>
+        </div>
+        <div class="mini-col">
+          <h4>Keywords</h4>
+          <p>LoRA · RL/SFT · pruning · reasoning · edge inference</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Contact (mirrors "Location" section in demo: image + hours/info) -->
+  <section id="contact" class="section">
+    <div class="container section-grid">
+      <div class="section-text">
+        <h2>Contact</h2>
+        <p>
+          If you’d like to discuss research, collaboration, or graduate study opportunities, feel free to reach out.
+        </p>
+
+        <div class="info-block">
+          <h3>Details</h3>
+          <p><strong>Name:</strong> Yiming Luo</p>
+          <p><strong>Interests:</strong> Efficient LLMs · Privacy · Reasoning · Systems</p>
+          <p><strong>Email:</strong> dc22922@um.edu.mo</p>
+          <p>
+			  <strong>Links:</strong>
+			  <a href="https://github.com/ymLuo666" target="_blank">GitHub</a>
+		  </p>
+        </div>
+
+        <div class="info-block">
+          <h3>Availability</h3>
+          <p>Mon–Fri — 10am–6pm (SGT)</p>
+          <p>Weekends — Flexible</p>
+        </div>
+      </div>
+
+      <figure class="section-media">
+        <img src="images/UM.png" alt="Contact / banner placeholder" />
+      </figure>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Charles (Yiming) Luo</p>
+      <a class="backtop" href="#top" aria-label="Back to top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
