@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/* ====== Base ====== */
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+nav,
+footer {
+	font-family: Lobster, Cambria, "Times New Roman", serif;
+}
+
+body {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 100%;
+	background-color: #E8EAF6;
+	color: #222;
+}
+
+/* ====== Header ====== */
+header,
+footer {
+	color: white;
+	background-color: #1A237E;
+	margin: 0em 4em 0.25em 4em;
+}
+
+header h1 {
+	padding: 0.65rem 0 0 1.25rem;
+	font-size: 2.25rem;
+	font-weight: bold;
+}
+
+header p {
+	font-size: 1.05rem;
+	font-style: italic;
+	margin-bottom: 1rem;
+	padding: 0 0 0 1.25rem;
+}
+
+/* ====== Main ====== */
+main {
+	background-color: #FFFFFF;
+	margin: 1em 4em 1em 4em;
+	padding: 1.25em;
+}
+
+section {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+form {
+	background-color: #7B85C6;
+	padding: 1rem;
+}
+
+/* ====== Fieldset / Legend ====== */
+fieldset {
+	margin: 0;
+	padding: 1rem;
+	background-color: #C6CAE6;
+	width: 100%;
+	border: none;
+}
+
+legend {
+	width: 100%;
+	margin: 0 0 0.75rem 0;
+	padding: 0.45rem 1rem;
+	font-size: 1.35rem;
+	background-color: #7B85C6;
+	color: #E8EAF6;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+/* ====== Typography in form ====== */
+form p {
+	margin-top: 0.75rem;
+}
+
+label {
+	display: block;
+	margin: 0.55rem 0 0.25rem 0;
+	font-size: 1.05rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+	width: 100%;
+	padding: 0.55rem 0.65rem;
+	border: 1px solid #9FA8DA;
+	background: #FFFFFF;
+	font-size: 1rem;
+}
+
+textarea {
+	min-height: 6.5rem;
+	resize: vertical;
+}
+
+.short {
+	width: 6rem !important;
+}
+
+.columns {
+	display: flex;
+	gap: 2rem;
+	align-items: flex-start;
+}
+
+.columns .left {
+	flex: 1;
+}
+
+.columns .right {
+	width: 360px;
+}
+
+/* ====== Right-side boxed groups (Copyright / CC Types) ====== */
+.box {
+	border: 1px solid #9FA8DA;
+	background: #C6CAE6;
+	padding: 0.75rem 0.9rem;
+	margin-top: 1.2rem;
+}
+
+.box h3 {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 1.05rem;
+	font-weight: bold;
+	margin: 0 0 0.5rem 0;
+}
+
+.inline-choice label {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0.35rem 0;
+}
+
+/* ====== License acceptance bar ====== */
+.license-bar {
+	margin: 1rem 0;
+	padding: 0.85rem 1rem;
+	background: #9FA8DA;
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.license-bar label {
+	margin: 0;
+}
+
+.bottom-grid {
+	display: flex;
+	gap: 2rem;
+	margin-top: 0.75rem;
+}
+
+.bottom-grid .box {
+	width: 360px;
+	margin-top: 0;
+}
+
+input[type="color"] {
+	width: 4.2rem;
+	height: 2.0rem;
+	padding: 0;
+	border: 1px solid #9FA8DA;
+	background: #fff;
+}
+
+/* ====== Buttons ====== */
+.actions {
+	margin-top: 1.25rem;
+	padding: 1rem;
+	background: #9FA8DA;
+	display: flex;
+	gap: 1rem;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+	background: #D63864;
+	color: #fff;
+	border: none;
+	padding: 0.8rem 1.6rem;
+	font-size: 1.05rem;
+	font-weight: 600;
+	border-radius: 0.35rem;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+	filter: brightness(0.95);
+}
+
+
+input[type="text"],
+input[type="number"],
+select {
+	width: 260px;
+	height: 34px;
+	padding: 6px 10px;
+	border: 2px solid #9E9E9E;
+	background: #FFFFFF;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+	font-size: 1rem;
+}
+
+input[type="text"][name="city"] {
+	width: 300px;
+}
+
+input[type="number"][name="rate"] {
+	width: 140px;
+}
+
+input[type="color"][name="color"] {
+	width: 70px;
+	height: 30px;
+	padding: 0;
+	border: 2px solid #9E9E9E;
+	background: #FFFFFF;
+}

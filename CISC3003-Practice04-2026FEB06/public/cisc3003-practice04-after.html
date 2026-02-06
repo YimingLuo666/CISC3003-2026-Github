@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CISC3003: Practice 04 - After</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/cisc3003-practice04.css" />
+</head>
+
+<body>
+<header>
+  <h1>Share Your Travels</h1>
+  <p>let us know where you've been</p>
+</header>
+
+<main>
+  <section>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>PHOTO DETAILS</legend>
+
+        <!-- Main layout table -->
+        <table width="100%" cellspacing="0" cellpadding="8">
+          <!-- Title -->
+          <tr>
+            <td colspan="2">
+              <label>Title</label><br/>
+              <input type="text" name="title"
+                     placeholder="Give your photo a descriptive name" style="width:100%;" />
+            </td>
+          </tr>
+
+          <!-- Description -->
+          <tr>
+            <td colspan="2">
+              <label>Description</label><br/>
+              <textarea name="description" rows="5" cols="61"
+                        placeholder="Adding a rich description will help with search results"
+                        style="width:100%;"></textarea>
+            </td>
+          </tr>
+
+          <!-- Left column: location fields | Right column: copyright boxes -->
+          <tr valign="top">
+            <!-- LEFT -->
+            <td width="60%">
+              <table width="100%" cellspacing="0" cellpadding="6">
+                <tr>
+                  <td>
+                    <label>Continent</label><br/>
+                    <select name="continent" style="width:100%;">
+                      <option selected>Choose continent</option>
+                      <option>Africa</option>
+                      <option>Asia</option>
+                      <option>Europe</option>
+                      <option>North America</option>
+                      <option>South America</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>Country</label><br/>
+                    <select name="country" style="width:100%;">
+                      <option selected>Choose country</option>
+                      <option>Canada</option>
+                      <option>Mexico</option>
+                      <option>United States</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>City</label><br/>
+                    <select name="city" style="width:100%;">
+                      <option selected>Choose city</option>
+                      <option>Calgary</option>
+                      <option>Montreal</option>
+                      <option>Toronto</option>
+                      <option>Vancouver</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <!-- RIGHT -->
+            <td width="40%">
+              <table width="100%" cellspacing="0" cellpadding="10" border="0">
+                <tr>
+                  <td>
+                    <strong>Copyright?</strong><br/>
+                    <input type="radio" name="copyright" value="reserved" />
+                    All rights reserved<br/>
+                    <input type="radio" name="copyright" value="cc" checked />
+                    Creative Commons
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>Creative Commons Types</strong><br/>
+                    <!-- checkbox array cc[] with unique values -->
+                    <input type="checkbox" name="cc[]" value="1" /> Attribution <br/>
+                    <input type="checkbox" name="cc[]" value="2" /> Noncommercial <br/>
+                    <input type="checkbox" name="cc[]" value="3" /> No Derivative Works <br/>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- License row -->
+          <tr>
+            <td colspan="2">
+              I accept the software license
+              <input type="checkbox" name="license" value="yes" />
+            </td>
+          </tr>
+
+          <!-- Bottom: rate/color (left) | date/time (right) -->
+          <tr valign="top">
+            <td width="60%">
+              <table width="100%" cellspacing="0" cellpadding="6">
+                <tr>
+                  <td>
+                    <label>Rate this photo:</label><br/>
+                    <input type="number" min="1" max="5" name="rate" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label>Color Collection:</label><br/>
+                    <input type="color" name="color" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <td width="40%">
+              <table width="100%" cellspacing="0" cellpadding="6">
+                <tr>
+                  <td>
+                    <label>Date Taken:</label><br/>
+                    <input type="date" name="date" style="width:100%;" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label>Time Taken:</label><br/>
+                    <input type="time" name="time" style="width:100%;" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Buttons -->
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Submit" class="rounded">
+              <input type="reset" value="Clear Form" class="rounded">
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </section>
+</main>
+
+</body>
+</html>
