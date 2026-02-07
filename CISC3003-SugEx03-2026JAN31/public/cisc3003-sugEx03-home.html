@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Website · Home</title>
+  <link rel="stylesheet" href="css/cisc3003-SugEx03-home.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-row">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <span>Charles (Yiming) Luo</span>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="active" href="cisc3003-sugEx03-home.html">Home</a>
+      <a href="cisc3003-sugEx03-profile.html">Profile</a>
+      <a href="cisc3003-sugEx03-summary.html">Summary</a>
+      <a href="cisc3003-sugEx03-showcase.html">Showcase</a>
+      <a href="cisc3003-sugEx03-qualification.html">Qualification</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" style="--hero-image:url('images/hero-home.jpg')">
+    <div class="container hero-content">
+      <h1>Home · About Me</h1>
+      <p>A daily-life personal page: who I am, what I enjoy, and small moments I want to keep.</p>
+      <nav class="section-nav" aria-label="On-page navigation">
+		  <a href="#log">Learning Log</a>
+		  <a href="#accomplishments">Accomplishments</a>
+		  <a href="#sop">Statement of Purpose</a>
+	</nav>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>About Me</h2>
+        <p class="lead">
+          Hi, I’m Charles (Yiming) Luo. I’m a CS student who enjoys building small projects and keeping life simple:
+          learn steadily, stay curious, and appreciate everyday routines.
+        </p>
+
+        <div class="card">
+          <h3>What you’ll find here</h3>
+          <ul>
+            <li>My daily-life values and interests</li>
+            <li>Small notes (like a light blog)</li>
+            <li>Some highlights of what I’ve learned and built</li>
+            <li>My education/experience in a clean format</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>My daily vibe</h3>
+          <div class="pills">
+            <span class="pill">Coffee walks</span>
+            <span class="pill">Campus life</span>
+            <span class="pill">Coding and design</span>
+            <span class="pill">Photos</span>
+            <span class="pill">Quiet reflection</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>My Photos (Face Photos)</h3>
+          <figure class="gallery" id="photos">
+			  <img src="images/face-01.jpg" alt="Portrait photo 1">
+			  <img src="images/face-02.jpg" alt="Portrait photo 2">
+			  <img src="images/face-03.jpg" alt="Portrait photo 3">
+			  <img src="images/face-04.jpg" alt="Portrait photo 4">
+			  <img src="images/face-05.jpg" alt="Portrait photo 5">
+		</figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quick" class="section alt">
+    <div class="container">
+      <h2>Quick Facts</h2>
+      <p class="lead">A small snapshot for classmates, teachers, and anyone who visits.</p>
+
+      <div class="cards-3">
+        <article class="card">
+          <h3>Currently</h3>
+          <ul>
+            <li>Final-year CS student</li>
+            <li>Enjoy building neat and usable things</li>
+            <li>Trying to keep a stable routine</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Favorites</h3>
+          <ul>
+            <li>Drink: coffee / milk tea</li>
+            <li>Place: campus corners and bookstores</li>
+            <li>Style: clean and simple</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Links</h3>
+          <p><strong>GitHub:</strong> <a href="https://github.com/ymLuo666" target="_blank" rel="noopener">ymLuo666</a></p>
+          <p><strong>Email:</strong> dc22922@um.edu.mo</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>Contact</h3>
+        <p>If you want to say hi, talk about projects, or share something interesting, feel free to reach out.</p>
+        <p><strong>Email:</strong> dc22922@um.edu.mo</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/ymLuo666" target="_blank" rel="noopener">github.com/ymLuo666</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Message template</h3>
+        <p>Hi Charles, I found your personal website and wanted to ask about …</p>
+        <p>— (Your Name)</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Charles (Yiming) Luo</p>
+      <a class="backtop" href="#main">Back to top ↑</a>
+    </div>
+  </footer>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

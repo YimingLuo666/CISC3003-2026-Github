@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Website · Showcase</title>
+  <link rel="stylesheet" href="css/cisc3003-sugEx03-showcase.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-row">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <span>Charles (Yiming) Luo</span>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="cisc3003-sugEx03-home.html">Home</a>
+      <a href="cisc3003-sugEx03-profile.html">Profile</a>
+      <a href="cisc3003-sugEx03-summary.html">Summary</a>
+      <a class="active" href="cisc3003-sugEx03-showcase.html">Showcase</a>
+      <a href="cisc3003-sugEx03-qualification.html">Qualification</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" style="--hero-image:url('images/hero-showcase.jpg')">
+    <div class="container hero-content">
+      <h1>Showcase</h1>
+      <p>My Learning Log · My Accomplishments · My Statement of Purpose</p>
+      <div class="section-nav">
+        <a href="#log">Learning Log</a>
+        <a href="#accomplishments">Accomplishments</a>
+        <a href="#sop">Statement of Purpose</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="log" class="section">
+  <div class="container">
+    <h2>My Learning Log</h2>
+    <p class="lead">
+      A research-oriented learning log documenting how my understanding evolved through experiments,
+      implementation, and reflection.
+    </p>
+
+    <div class="timeline">
+      <article class="card">
+        <h3>Research Log · Model Pruning Exploration</h3>
+        <p><strong>What I did:</strong> Implemented and tested different pruning strategies on neural network models, experimenting with varying pruning ratios.</p>
+        <p><strong>What I learned:</strong> Moderate pruning can significantly reduce model size with limited performance loss, while aggressive pruning often causes instability.</p>
+        <p><strong>Next:</strong> Analyze pruning results more systematically and relate efficiency trade-offs to model behavior.</p>
+      </article>
+
+      <article class="card">
+        <h3>Research Log · Experimental Design</h3>
+        <p><strong>What I did:</strong> Organized experiments with consistent settings to ensure fair comparison across different pruning configurations.</p>
+        <p><strong>What I learned:</strong> Clear experimental control and logging are essential for drawing reliable conclusions.</p>
+        <p><strong>Next:</strong> Improve result visualization and summarize findings more clearly.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="accomplishments" class="section alt">
+  <div class="container">
+    <h2>My Accomplishments</h2>
+    <p class="lead">
+      Selected outcomes that reflect my academic growth, research exploration, and ability to complete
+      meaningful technical work.
+    </p>
+
+    <div class="cards-2">
+      <article class="card">
+        <h3>Academic & Research Highlights</h3>
+        <ul>
+          <li>Completed a research-oriented study on model pruning and efficiency trade-offs</li>
+          <li>Designed and ran controlled experiments to evaluate pruning strategies</li>
+          <li>Improved skills in experiment documentation and result analysis</li>
+          <li>Built a structured multi-page personal website to present academic development</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Code & Documentation</h3>
+        <p>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/ymLuo666" target="_blank" rel="noopener">github.com/ymLuo666</a>
+        </p>
+        <p class="muted">
+          I use GitHub to organize experiments, coursework, and personal technical projects,
+          focusing on clarity and reproducibility.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="sop" class="section">
+  <div class="container">
+    <h2>My Statement of Purpose</h2>
+    <p class="lead">
+      A concise academic-oriented statement reflecting my motivation for research and long-term development.
+    </p>
+
+    <div class="card">
+      <p>
+        I am a computer science student with a growing interest in research on efficient and practical machine
+        learning systems. Through hands-on projects and research exploration, I learned that meaningful progress
+        comes from careful experimental design, systematic evaluation, and clear documentation.
+      </p>
+      <p>
+        My experience with model pruning strengthened my interest in efficiency-oriented methods and motivated me
+        to further explore how models can be optimized under real-world constraints. Moving forward, I hope to
+        deepen my research skills, continue building reliable systems, and pursue opportunities that allow me to
+        contribute to practical and responsible AI development.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Charles (Yiming) Luo</p>
+      <a class="backtop" href="#main">Back to top ↑</a>
+    </div>
+  </footer>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

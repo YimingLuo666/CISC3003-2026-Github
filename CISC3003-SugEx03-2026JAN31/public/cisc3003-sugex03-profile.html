@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Website · Profile</title>
+  <link rel="stylesheet" href="css/cisc3003-sugEx03-profile.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-row">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <span>Charles (Yiming) Luo</span>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="cisc3003-sugEx03-home.html">Home</a>
+      <a class="active" href="cisc3003-sugEx03-profile.html">Profile</a>
+      <a href="cisc3003-sugEx03-summary.html">Summary</a>
+      <a href="cisc3003-sugEx03-showcase.html">Showcase</a>
+      <a href="cisc3003-sugEx03-qualification.html">Qualification</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" style="--hero-image:url('images/hero-profile.jpg')">
+    <div class="container hero-content">
+      <h1>Profile</h1>
+      <p>My Values & Beliefs · Career Aspirations · Interests & Hobbies · Blog Posts · Contact</p>
+      <div class="section-nav">
+        <a href="#values">Values</a>
+        <a href="#aspirations">Aspirations</a>
+        <a href="#interests">Interests</a>
+        <a href="#blog">Blog Posts</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="values" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>My Values and Beliefs</h2>
+        <p class="lead">These are simple principles I try to follow in school and in everyday life.</p>
+
+        <div class="card">
+          <h3>Principles</h3>
+          <ul>
+            <li><strong>Stay curious:</strong> keep asking “why” and learn one new thing often</li>
+            <li><strong>Be consistent:</strong> small progress daily beats sudden motivation</li>
+            <li><strong>Be considerate:</strong> respect people, communicate clearly</li>
+            <li><strong>Keep it simple:</strong> tidy habits, tidy work, tidy mind</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>A profile photo</h3>
+        <img class="profile-img" src="images/face-01.jpg" alt="Profile photo" />
+      </div>
+    </div>
+  </section>
+
+  <section id="aspirations" class="section alt">
+  <div class="container">
+    <h2>My Career Aspirations</h2>
+    <p class="lead">
+      My career aspiration is to pursue research-oriented graduate study and contribute to the development of efficient,
+      reliable, and responsible machine learning systems.
+    </p>
+
+    <div class="cards-2">
+      <article class="card">
+        <h3>Research-Oriented Graduate Study</h3>
+        <p>
+          I aim to continue my academic journey through graduate-level research in computer science, with a focus on
+          machine learning and large language model systems. I am particularly interested in how models can be trained
+          and adapted efficiently under practical constraints such as limited resources, privacy requirements, and
+          deployment feasibility.
+        </p>
+        <p>
+          Through graduate study, I hope to strengthen my ability to design sound experiments, analyze results critically,
+          and communicate research findings clearly in written and visual forms.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Long-Term Research Direction</h3>
+        <p>
+          In the long term, I aspire to work in research-driven environments where I can explore the intersection of theory
+          and practice. My goal is to contribute to research that not only proposes new ideas, but also validates them
+          through careful evaluation and reproducible implementation.
+        </p>
+        <p>
+          By continuously improving my technical foundation and research skills, I hope to participate in projects that
+          advance efficient and trustworthy AI systems with real-world impact.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <section id="interests" class="section">
+    <div class="container">
+      <h2>My Interests and Hobbies</h2>
+      <p class="lead">Outside class, I try to keep life warm and balanced.</p>
+
+      <div class="cards-3">
+        <article class="card">
+          <h3>Daily routine</h3>
+          <p>Walking, light workouts, and keeping a stable schedule.</p>
+        </article>
+        <article class="card">
+          <h3>Creating</h3>
+          <p>Web pages, small tools, and polishing UI details that make things feel “finished”.</p>
+        </article>
+        <article class="card">
+          <h3>Exploring</h3>
+          <p>Trying new places, taking photos, and collecting small reflections.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>My contact</h3>
+        <p><strong>Email:</strong> dc22922@um.edu.mo</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/ymLuo666" target="_blank" rel="noopener">ymLuo666</a></p>
+        <p class="muted">Feel free to reach out about school life, projects, or anything interesting.</p>
+      </div>
+      <div class="card">
+        <h3>Quick message template</h3>
+        <p>Hi Charles, I saw your website and wanted to talk about …</p>
+        <p>— (Your Name)</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Charles (Yiming) Luo</p>
+      <a class="backtop" href="#main">Back to top ↑</a>
+    </div>
+  </footer>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
