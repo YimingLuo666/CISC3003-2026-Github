@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Showcase</title>
+    <link rel="stylesheet" href="css/cisc3003-IndAssgn-showcase.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Yiming Luo</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Profile</a></li>
+          <li><a href="#experience">Highlights</a></li>
+          <li><a href="#projects">Direction</a></li>
+          <li><a href="cisc3003-IndAssgn-summary.html">Summary</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Yiming Luo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Profile</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Highlights</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Direction</a></li>
+          <li>
+            <a href="cisc3003-IndAssgn-summary.html" onclick="toggleMenu()"
+              >Summary</a
+            >
+          </li>
+          <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/profile-pic.png" alt="Yiming Luo showcase picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">This is my</p>
+        <h1 class="title">Showcase</h1>
+        <p class="section__text__p2">Academic &amp; Professional Highlights</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='cisc3003-IndAssgn-summary.html'"
+          >
+            Portfolio Summary
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='mailto:dc22922@um.edu.mo'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="images/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="images/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">A Quick View Of</p>
+      <h1 class="title">My Profile</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="images/about-pic.png"
+            alt="Yiming Luo profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="images/experience.png"
+                alt="Profile icon"
+                class="icon"
+              />
+              <h2>Current Stage</h2>
+              <p>Final-year Student <br />Computer Science</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="images/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h2>Institution</h2>
+              <p>University of Macau<br />B.Sc. Programme</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              This page provides a concise summary of my academic background,
+              interests, and strengths. It is designed for graduate schools,
+              course instructors, and potential employers who want a quick but
+              clear understanding of my professional direction and portfolio
+              identity.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Selected</p>
+      <h1 class="title">Highlights</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Academic Strengths</h2>
+            <div class="article-container">
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Analytical Thinking</h3>
+                  <p>Strong</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Research Interest</h3>
+                  <p>Focused</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Technical Writing</h3>
+                  <p>Strong</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Project Planning</h3>
+                  <p>Structured</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Documentation</h3>
+                  <p>Careful</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Presentation</h3>
+                  <p>Professional</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Coverage</h2>
+            <div class="article-container">
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>AI / ML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Web Development</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Programming</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Data Analysis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Git / GitHub</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Highlight icon" class="icon" />
+                <div>
+                  <h3>Academic English</h3>
+                  <p>Strong</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">My Long-Term</p>
+      <h1 class="title">Direction</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Research Interest</h2>
+            <p>
+              I am particularly interested in efficient and trustworthy AI
+              systems, especially large language models that can be adapted for
+              practical use. I hope to further explore model efficiency,
+              privacy-preserving approaches, and intelligent systems that are
+              both capable and deployable in real-world settings.
+            </p>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Graduate Study</h2>
+            <p>
+              My academic goal is to pursue advanced graduate study in Computer
+              Science, where I can strengthen my research foundation and work on
+              meaningful AI problems. I would like to develop deeper expertise
+              in machine learning, large language models, and research-driven
+              system design through a rigorous and collaborative environment.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Professional Goal</h2>
+            <p>
+              In the long term, I hope to contribute to the development of
+              deployable AI products and practical intelligent systems. I want
+              to bridge research and implementation by working on solutions that
+              are technically sound, user-oriented, and valuable in real
+              application scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#achievements'"
+      />
+    </section>
+
+    <section id="achievements">
+      <p class="section__text__p1">Awards &amp; Honors</p>
+      <h1 class="title">Major Achievements</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img src="images/checkmark.png" alt="Achievement icon" class="icon" />
+                <div>
+                  <h2>Macau Foundation Scholarship for the academic year 2023/2024</h2>
+                  <p>2024</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="images/checkmark.png" alt="Achievement icon" class="icon" />
+                <div>
+                  <h2>Bronze Award of Whole Person Development Award Programme 2023/2024</h2>
+                  <p>2024</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="images/checkmark.png" alt="Achievement icon" class="icon" />
+                <div>
+                  <h2>Dean’s Honor List 2nd semester of the academic year 2023/2024</h2>
+                  <p>June, 2024</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="images/checkmark.png" alt="Achievement icon" class="icon" />
+                <div>
+                  <h2>Dean’s Honor List 1st semester of the academic year 2023/2024</h2>
+                  <p>February, 2024</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="images/checkmark.png" alt="Achievement icon" class="icon" />
+                <div>
+                  <h2>Henry Fok Foundation Scholarship for the academic year 2022/2023</h2>
+                  <p>2023</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="images/checkmark.png" alt="Achievement icon" class="icon" />
+                <div>
+                  <h2>Luso International Bank Whole Person Development Scholarship for the academic year of 2022/2023</h2>
+                  <p>2023</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="images/checkmark.png" alt="Achievement icon" class="icon" />
+                <div>
+                  <h2>Golden Award of Whole Person Development Award Programme 2022/2023</h2>
+                  <p>2023</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="images/checkmark.png" alt="Achievement icon" class="icon" />
+                <div>
+                  <h2>UM RC Foundation Scholarship</h2>
+                  <p>2023</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="images/checkmark.png" alt="Achievement icon" class="icon" />
+                <div>
+                  <h2>Dean’s Honor List 2nd semester of the academic year 2022/2023</h2>
+                  <p>June, 2023</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="images/checkmark.png" alt="Achievement icon" class="icon" />
+                <div>
+                  <h2>Dean’s Honour List 1st semester of the academic year 2022/2023</h2>
+                  <p>February, 2023</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:dc22922@um.edu.mo">
+              dc22922@um.edu.mo
+            </a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="images/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Profile</a></li>
+            <li><a href="#experience">Highlights</a></li>
+            <li><a href="#projects">Direction</a></li>
+            <li><a href="cisc3003-IndAssgn-summary.html">Summary</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>CISC3003 Web Programming - 2026: DC229226 + Yiming Luo</p>
+    </footer>
+
+    <script src="cisc3003-IndAssgn-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Demo 02 | Dutch Portraits of the Golden Age - Yiming Luo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+    <style>
+        body, header, div, p, h1, h2, h3, h4, footer, article {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", "Arial", sans-serif;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Merriweather", "Times New Roman", serif;
+        }
+
+        body {
+            background: #fff;
+            color: #222;
+        }
+
+        header {
+            position: relative;
+        }
+
+        .banner {
+            width: 100%;
+            display: block;
+            filter: brightness(55%);
+        }
+
+        .banner--title {
+            position: absolute;
+            left: 50%;
+            top: 42%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+
+        header h1,
+        header h2 {
+            color: white;
+        }
+
+        header h1 {
+            font-size: 48px;
+        }
+
+        header h2 {
+            font-size: 36px;
+        }
+
+        header span {
+            display: block;
+            text-align: center;
+            margin: 10px auto 0 auto;
+            font-size: 24px;
+            width: 200px;
+            padding: 9px;
+            border: solid 1px white;
+        }
+
+        header span a:link,
+        header span a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        article {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        #start {
+            height: 0;
+        }
+
+        .highlights {
+            padding: 20px 0 10px 0;
+        }
+
+        .highlights h2 {
+            font-size: 18px;
+            text-decoration: underline;
+            margin: 10px 0 12px 0;
+        }
+
+        .highlights--container {
+            float: left;
+            width: 580px;
+            margin-bottom: 20px;
+        }
+
+        .highlights--container:first-of-type {
+            margin-right: 10px;
+        }
+
+        .highlights--media {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .highlights--media img {
+            display: block;
+            width: 285px;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .highlights--text {
+            overflow: hidden;
+        }
+
+        .highlights--text h3 {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .highlights--text p {
+            font-size: 10px;
+            line-height: 1.35;
+            margin-bottom: 6px;
+        }
+
+        .highlights--button {
+            float: right;
+            font-size: 10px;
+            padding: 4px 8px;
+            background: #f59e0b;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .highlights--button:visited {
+            color: #fff;
+        }
+
+        .highlights::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .mosaic {
+            position: relative;
+            width: 1170px;
+            height: 990px;
+            margin: 0 auto 30px auto;
+        }
+
+        .mosaic-item {
+            position: absolute;
+        }
+
+        .mosaic-item img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .mosaic--a { left: 0px;   top: 0px;   width: 580px; height: 390px; }
+        .mosaic--b { left: 590px; top: 0px;   width: 285px; height: 190px; }
+        .mosaic--c { left: 590px; top: 200px; width: 285px; height: 190px; }
+        .mosaic--d { left: 885px; top: 0px;   width: 285px; height: 390px; }
+
+        .mosaic--e { left: 0px;   top: 400px; width: 285px; height: 390px; }
+        .mosaic--f { left: 295px; top: 400px; width: 285px; height: 190px; }
+        .mosaic--g { left: 590px; top: 400px; width: 285px; height: 190px; }
+        .mosaic--i { left: 885px; top: 400px; width: 285px; height: 390px; }
+
+        .mosaic--h { left: 295px; top: 600px; width: 580px; height: 390px; }
+        .mosaic--j { left: 0px;   top: 800px; width: 285px; height: 190px; }
+        .mosaic--k { left: 885px; top: 800px; width: 285px; height: 190px; }
+
+        footer {
+            text-align: center;
+            padding: 18px 0 24px 0;
+            font-size: 14px;
+        }
+
+        footer p {
+            color: #555;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            article,
+            .mosaic {
+                width: 95%;
+            }
+
+            .highlights--container {
+                width: 100%;
+                float: none;
+                margin-right: 0;
+            }
+
+            .mosaic {
+                height: auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                position: static;
+            }
+
+            .mosaic-item {
+                position: static;
+                width: 100% !important;
+                height: 260px !important;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .banner--title {
+                top: 50%;
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header h2 {
+                font-size: 20px;
+            }
+
+            header span {
+                width: 150px;
+                font-size: 18px;
+            }
+
+            .highlights--media,
+            .highlights--text {
+                float: none;
+                width: 100%;
+            }
+
+            .highlights--media img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .mosaic {
+                grid-template-columns: 1fr;
+            }
+
+            .mosaic-item {
+                height: auto !important;
+            }
+
+            .mosaic-item img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/veermeer-view-of-house--background.jpg" class="banner" alt="Banner image">
+        <div class="banner--title">
+            <h1>Dutch Portraits of the Golden Age</h1>
+            <h2>From the Rijks Museum</h2>
+            <span><a href="#start">Start</a></span>
+        </div>
+    </header>
+
+    <article>
+        <div id="start"></div>
+
+        <div class="highlights">
+            <h2>Latest Additions</h2>
+
+            <div class="highlights--container">
+                <div class="highlights--media">
+                    <img src="images/mosaic-f.jpg" alt="Portrait of Maritge Claesdr Vooght">
+                </div>
+                <div class="highlights--text">
+                    <h3>Portrait of Maritge Claesdr Vooght</h3>
+                    <p><em>Frans Hals, 1639</em></p>
+                    <p>
+                        Maritge Vooght is portrayed in a traditional pose, proudly
+                        sitting upright and looking directly toward the viewer.
+                    </p>
+                    <a href="#gallery" class="highlights--button">Read More</a>
+                </div>
+            </div>
+
+            <div class="highlights--container">
+                <div class="highlights--media">
+                    <img src="images/mosaic-g.jpg" alt="Portrait of Johannes Wtenbogaert">
+                </div>
+                <div class="highlights--text">
+                    <h3>Portrait of Johannes Wtenbogaert</h3>
+                    <p><em>Rembrandt, 1633</em></p>
+                    <p>
+                        Wtenbogaert’s face is modeled more realistically than his
+                        hands, which may have been completed by a pupil in
+                        Rembrandt’s workshop.
+                    </p>
+                    <a href="#gallery" class="highlights--button">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mosaic" id="gallery">
+            <div class="mosaic-item mosaic--a"><img src="images/mosaic-a.jpg" alt="Painting A"></div>
+            <div class="mosaic-item mosaic--b"><img src="images/mosaic-b.jpg" alt="Painting B"></div>
+            <div class="mosaic-item mosaic--c"><img src="images/mosaic-c.jpg" alt="Painting C"></div>
+            <div class="mosaic-item mosaic--d"><img src="images/mosaic-d.jpg" alt="Painting D"></div>
+            <div class="mosaic-item mosaic--e"><img src="images/mosaic-e.jpg" alt="Painting E"></div>
+            <div class="mosaic-item mosaic--f"><img src="images/mosaic-f.jpg" alt="Painting F"></div>
+            <div class="mosaic-item mosaic--g"><img src="images/mosaic-g.jpg" alt="Painting G"></div>
+            <div class="mosaic-item mosaic--h"><img src="images/mosaic-h.jpg" alt="Painting H"></div>
+            <div class="mosaic-item mosaic--i"><img src="images/mosaic-i.jpg" alt="Painting I"></div>
+            <div class="mosaic-item mosaic--j"><img src="images/mosaic-j.jpg" alt="Painting J"></div>
+            <div class="mosaic-item mosaic--k"><img src="images/mosaic-k.jpg" alt="Painting K"></div>
+        </div>
+    </article>
+
+    <footer>
+        <p><em>CISC3003 Web Programming - 2026: DC229226 + Yiming Luo</em></p>
+        <p><em>Demo 02 Integrated Project Page</em></p>
+    </footer>
+</body>
+</html>

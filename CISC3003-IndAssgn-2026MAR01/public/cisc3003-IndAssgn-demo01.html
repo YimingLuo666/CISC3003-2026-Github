@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 01 | RedStore E-Commerce Website - Yiming Luo</title>
+    <link rel="stylesheet" href="css/cisc3003-IndAssgn-demo01.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header" id="top">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="RedStore Logo" width="125">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#offer">Offer</a></li>
+                        <li><a href="#testimonial">Reviews</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="cisc3003-IndAssgn-home.html">Back to Portfolio</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" alt="Shopping Cart" width="30" height="30">
+                <img src="images/menu.png" alt="Menu Icon" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>RedStore<br>E-Commerce Demo</h1>
+                    <p>
+                        This integrated demo page presents a complete responsive e-commerce
+                        website developed in Web Programming. It demonstrates page layout,
+                        product presentation, responsive navigation, and visual consistency
+                        in a single polished project page.
+                    </p>
+                    <a href="#products" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png" alt="Featured Hero Product">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- featured categories --------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg" alt="Category 1">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg" alt="Category 2">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg" alt="Category 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- featured products --------->
+    <div class="small-container" id="products">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg" alt="Red Printed T-Shirt">
+                <h3>Red Printed T-Shirt</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="Black Sports Shoes">
+                <h3>Black Sports Shoes</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$75.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="Grey Sweatpants">
+                <h3>Grey Sweatpants</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$42.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="Blue Polo Shirt">
+                <h3>Blue Polo Shirt</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$58.00</p>
+            </div>
+        </div>
+
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg" alt="Running Shoes">
+                <h3>Running Shoes</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$61.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="Sports T-Shirt">
+                <h3>Sports T-Shirt</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$36.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="Sport Socks">
+                <h3>Sport Socks</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$12.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="Black Watch">
+                <h3>Black Watch</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$95.00</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="Smart Watch">
+                <h3>Smart Watch</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$89.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="Training Shoes">
+                <h3>Training Shoes</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$78.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="Grey Sneakers">
+                <h3>Grey Sneakers</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$69.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="Track Pants">
+                <h3>Track Pants</h3>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$47.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-------- offer --------->
+    <div class="offer" id="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" alt="Exclusive Smart Band" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on RedStore</p>
+                    <h2>Smart Band 4</h2>
+                    <small>
+                        The Mi Smart Band 4 features a 39.9% larger AMOLED full-touch
+                        display with adjustable brightness, offering a cleaner and more
+                        user-friendly wearable experience.
+                    </small><br>
+                    <a href="#footer" class="btn">Learn More &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- testimonial --------->
+    <div class="testimonial" id="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        The website layout is clean and easy to navigate. The visual
+                        presentation of products makes the shopping experience feel smooth
+                        and professional.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-1.png" alt="User 1">
+                    <h3>Sean Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        This demo effectively shows responsive layout, product cards,
+                        pricing, and customer review sections in a single integrated page.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-2.png" alt="User 2">
+                    <h3>Mike Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        A strong course project example that combines front-end
+                        development, responsive design, and polished visual structure.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-3.png" alt="User 3">
+                    <h3>Mabel Joe</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- brands --------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png" alt="Godrej">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png" alt="Oppo">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png" alt="Coca Cola">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png" alt="PayPal">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png" alt="Philips">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------- footer --------->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Play Store">
+                        <img src="images/app-store.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="RedStore White Logo">
+                    <p>
+                        Our purpose is to sustainably make the pleasure and
+                        benefits of sports accessible to the many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">CISC3003 Web Programming - 2026: YOUR_STUDENT_ID Yiming Luo</p>
+            <p class="copyright">&copy; 2026 Yiming Luo. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-------- js for toggle menu --------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

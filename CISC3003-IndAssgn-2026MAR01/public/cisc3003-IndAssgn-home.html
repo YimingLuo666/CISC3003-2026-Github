@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Home</title>
+    <link rel="stylesheet" href="css/cisc3003-IndAssgn-home.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Yiming Luo</div>
+      <div>
+        <ul class="nav-links">
+		  <li><a href="#about">About</a></li>
+		  <li><a href="#work-experience">Experience</a></li>
+		  <li><a href="#experience">Strengths</a></li>
+		  <li><a href="#projects">Projects</a></li>
+		  <li><a href="cisc3003-IndAssgn-showcase.html">Showcase</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		</ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Yiming Luo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+		  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+		  <li><a href="#work-experience" onclick="toggleMenu()">Experience</a></li>
+		  <li><a href="#experience" onclick="toggleMenu()">Strengths</a></li>
+		  <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+		  <li>
+		    <a href="cisc3003-IndAssgn-showcase.html" onclick="toggleMenu()"
+		      >Showcase</a
+		    >
+		  </li>
+		  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+		</ul>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/profile-pic.png" alt="Yiming Luo profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Yiming Luo</h1>
+        <p class="section__text__p2">Final-year Computer Science Student</p>
+        <div class="btn-container">
+		  <button
+		    class="btn btn-color-2"
+		    onclick="location.href='cisc3003-IndAssgn-showcase.html'"
+		  >
+		    Showcase Page
+		  </button>
+		  <a
+		    class="btn btn-color-2"
+		    href="images/Yiming-Luo-CV.pdf"
+		    download
+		  >
+		    CV
+		  </a>
+		  <button
+		    class="btn btn-color-2"
+		    onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+		  >
+		    Contact Info
+		  </button>
+		</div>
+        <div id="socials-container">
+          <img
+            src="images/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/'"
+          />
+          <img
+            src="images/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="images/about-pic.png"
+            alt="Yiming Luo profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="images/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h2>Experience</h2>
+              <p>Research Projects <br />Web Programming &amp; AI Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="images/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h2>Education</h2>
+              <p>B.Sc. Computer Science<br />University of Macau</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a final-year Computer Science student at the University of
+              Macau, with strong interests in artificial intelligence, large
+              language models, and practical intelligent systems. My academic
+              journey has been shaped by both research exploration and hands-on
+              project development, especially in areas related to efficient and
+              privacy-aware AI. At the same time, my experience in web
+              programming, technical projects, and internship-related work has
+              strengthened my ability to turn ideas into clear, usable, and
+              well-structured solutions. Through this portfolio, I hope to
+              present my educational background, research interests, technical
+              skills, and professional potential to graduate schools,
+              instructors, and future employers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+    <section id="work-experience">
+	  <p class="section__text__p1">Explore My</p>
+	  <h1 class="title">Experience</h1>
+	  <div class="experience-details-container">
+	    <div class="about-containers">
+	      <div class="details-container">
+	        <h2 class="experience-sub-title">Research Assistant</h2>
+	        <p><strong>State Key Laboratory of Internet of Things for Smart City, University of Macau</strong></p>
+	        <p>May 2024 – Present | Macau SAR, China</p>
+	        <p>
+	          Supervisor: Prof. Li Li, Prof. Chengzhong Xu
+	        </p>
+	        <p>
+	          Conducted scientific research on multi-LLM agent inference cooperation,
+	          LLM multi-agent fine-tuning cooperation, and lightweight deployment
+	          through pruning-oriented exploration.
+	        </p>
+	      </div>
+	
+	      <div class="details-container">
+	        <h2 class="experience-sub-title">Research Assistant</h2>
+	        <p><strong>Zhuhai UM Science &amp; Technology Research Institute</strong></p>
+	        <p>December 2023 – May 2024 | Zhuhai, China</p>
+	        <p>
+	          Supervisor: Prof. Li Li, Prof. Chengzhong Xu
+	        </p>
+	        <p>
+	          Conducted scientific research in fine-tuning cooperation and the
+	          localization of large language models, with a focus on practical
+	          research implementation.
+	        </p>
+	      </div>
+	    </div>
+	
+	    <div class="about-containers">
+	      <div class="details-container">
+	        <h2 class="experience-sub-title">Information System Management and Development Intern</h2>
+	        <p><strong>Information Management Section, University of Macau</strong></p>
+	        <p>January 2024 – May 2024 | Macau SAR, China</p>
+	        <p>
+	          Conducted system maintenance and development work, strengthening my
+	          practical understanding of structured technical support and system-oriented
+	          implementation.
+	        </p>
+	      </div>
+	    </div>
+	  </div>
+	  <img
+	    src="images/arrow.png"
+	    alt="Arrow icon"
+	    class="icon arrow"
+	    onclick="location.href='./#experience'"
+	  />
+	</section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Strengths</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Research &amp; AI</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LLM Research</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Model Efficiency</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Privacy-aware AI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Research Writing</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming &amp; Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C / C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="images/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git &amp; GitHub</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/project-1.png"
+                alt="Demo 01 preview"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Demo 01</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/YimingLuo666/CISC3003-2026-Github/tree/main/CISC3003-Practice04-2026FEB06', '_blank')"
+              >
+                Links
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='cisc3003-IndAssgn-demo01.html'"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/project-2.png"
+                alt="Demo 02 preview"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Demo 02</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/YimingLuo666/CISC3003-2026-Github/tree/main/CISC3003-Practice05-2026FEB13', '_blank')"
+              >
+                Links
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='cisc3003-IndAssgn-demo02.html'"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="location.href='cisc3003-IndAssgn-showcase.html'"
+        >
+          Showcase Page
+        </button>
+        <button
+          class="btn btn-color-1"
+          onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+        >
+          Contact Info
+        </button>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:dc22922@um.edu.mo">
+              dc22922@um.edu.mo
+            </a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="images/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Strengths</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="cisc3003-IndAssgn-showcase.html">Showcase</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>CISC3003 Web Programming - 2026: DC229226 + Yiming Luo</p>
+    </footer>
+
+    <script src="cisc3003-IndAssgn-script.js"></script>
+  </body>
+</html>
