@@ -1,0 +1,26 @@
+.assignment-footer {
+  background-color: $veryLightGray;
+  border-top: 1px solid rgba(45, 49, 77, 0.08);
+  padding: 1.5rem 0;
+  text-align: center;
+
+  p {
+    margin: 0;
+    color: $darkBlue;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+}
+
+.footer__identity {
+  margin-top: 1rem;
+  color: $grayishBlue;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+
+  @include breakpoint-up(large) {
+    grid-column: 4;
+    justify-self: end;
+    text-align: right;
+  }
+}
